@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forside</title>
+    <link rel = "stylesheet" href = "Css/main.css">
+</head>
+<body>
+
+    <div class = "hero">
+        <div class = "hero-container">
+            <div>
+                <h1>Kommunalvalg 2021</h1>
+                <div>
+                    <form id = "addParti">
+                        <input type = "text" placeholder="Parti Navn" name = "parti">
+                        <button>Tilføj Parti</button>
+                    </form>
+
+                </div>
+            </div>
+            <div id = "partiTable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th id = "filter">Parti</th>
+                            <th>Antal Kandidater</th>
+                            <th>Stemmer Procentdel</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id = "tableBody">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class = "register-votes">
+                <div>
+                    <p style="font-size: 18px;"><b>Registrere Stemmer</b><br><span>Alle registerede stemmer vil blive nulstilt</span></p>
+                    <button id = "registerVotesBtn" style = "width:150px; height:45px;">Registrere Stemmer</button>
+                </div>
+                <div id ="registerVotesTable" class="hidden">
+                    <form id = "registerVotesForm">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Parti</th>
+                                    <th>Antal Stemmer</th>
+                                </tr>
+                            </thead>
+                            <tbody id = "registerVotesTbody">
+
+                            </tbody>
+                        </table>
+                        <a id = "submitVotes">Gem Stemmer</a>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="Js/main.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kandidater</title>
+  <link rel = "stylesheet" href ="../Css/main.css">
+</head>
+<body>
+
+    <div class = "hero">
+        <ion-icon name="arrow-back-outline" id = "back-btn"></ion-icon>
+      <div class = "hero-container">
+          <div><h1 id = "partiNavn"></h1></div>
+          <div style = "display: flex; justify-content: space-between; align-items: center">
+              <h2>Kandidater (<span id = "kandidatCount"></span>)</h2>
+              <button id = "addKandidat">Tilføj Kandidat</button>
+          </div>
+          <div class = "add-kandidat" hidden>
+                <form id = "addKandidatForm">
+                    <div>
+                        <div> <label for = "fornavn">Fornavn</label>
+                            <input type = "text" id = "fornavn" name = "firstName" required>
+                        </div>
+                        <div>
+                            <label for = "efternavn">Fornavn</label>
+                            <input type = "text" id = "efternavn" name = "lastName" required>
+                        </div>
+                    </div>
+                    <button>Gem Kandidat</button>
+                </form>
+          </div>
+          <div>
+              <table>
+              <thead>
+              <tr>
+                  <th>Navn</th>
+                  <th></th>
+              </tr>
+              </thead>
+                  <tbody id = "tableBody">
+
+                  </tbody>
+          </table>
+          </div>
+
+      </div>
+    </div>
+
+    <script src = "../Js/kandidater.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
