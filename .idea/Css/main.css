@@ -5,6 +5,8 @@
 }
 body{
      background: rgba(47,107,45,.9);
+    overflow-y:auto;
+    overflow:overlay;
 }
 
 

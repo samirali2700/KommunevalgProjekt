@@ -229,8 +229,8 @@ function filterParti(){
     setTimeout(()=>{setPartiTable()},100)
 }
 function comparePartiName(a,b){
-    let aShort = a.parti.split(".")[0]
-    let bShort = b.parti.split(".")[0]
+    let aShort = a.parti
+    let bShort = b.parti
 
     if(filterFlag) {
         if (aShort < bShort) {
